@@ -8,6 +8,6 @@ const client = new Client({
     database: "nodeapi1"
 })
 
-client.connect()
+//client.connect()
 
 module.exports = client
