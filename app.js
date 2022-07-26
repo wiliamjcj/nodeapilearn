@@ -41,5 +41,6 @@ app.post('/produtos', (req, res)=> {
     db.end;
     */
    console.log(`received payload ${req.body}`)
+   res.send('OK')
 })
 
