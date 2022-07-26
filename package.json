@@ -1,0 +1,13 @@
+{
+  "name": "sampleapiheroku",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "pg": "^8.7.3"
+  }
+}
