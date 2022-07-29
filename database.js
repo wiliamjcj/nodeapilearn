@@ -6,9 +6,9 @@ let localDbUrl = 'postgres://postgres:abc123@localhost:5432/nodeapi1'
 
 const client = new Client({
     connectionString: process.env.DATABASE_URL || localDbUrl
-    /*,ssl: {
+    ,ssl: {
         rejectUnauthorized: false
-    }*/
+    }
 })
 
 client.connect()
