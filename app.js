@@ -1,6 +1,7 @@
 const db = require("./database")
 const express = require("express")
 const bodyParser = require("body-parser")
+const path = require("path")
 
 const app = express()
 app.use(bodyParser.json());
@@ -9,6 +10,10 @@ app.use(bodyParser.urlencoded({
 }));
 const port = process.env.PORT || 3000
 
+//serve html
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, '/index.html'));
+});
 app.listen(port,()=>{
     console.log(`Server running at port ${port}`)
 })
